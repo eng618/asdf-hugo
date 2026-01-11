@@ -29,7 +29,7 @@ list_github_tags() {
 }
 
 list_all_versions() {
-  list_github_tags | awk '{print $0; print "extended_" $0}'
+  list_github_tags | awk '{print "extended_" $0}'
 }
 
 get_platform() {
