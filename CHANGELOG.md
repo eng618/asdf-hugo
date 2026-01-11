@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/eng618/asdf-hugo/compare/v1.2.0...v1.3.0) (2026-01-11)
+
+
+### Features
+
+* implement linting script and update CI workflow to use it ([824e6d6](https://github.com/eng618/asdf-hugo/commit/824e6d6e91406fe1a90c3d2071292c609dc4f694))
+
 ## [1.2.0](https://github.com/eng618/asdf-hugo/compare/v1.1.0...v1.2.0) (2026-01-11)
 
 
