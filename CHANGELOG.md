@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/eng618/asdf-hugo/compare/v1.1.0...v1.2.0) (2026-01-11)
+
+
+### Features
+
+* add FUNDING and dependabot configuration files ([2e31d37](https://github.com/eng618/asdf-hugo/commit/2e31d37edf173b19079f7dd9b95818ba24e0482a))
+
+
+### Bug Fixes
+
+* update copyright information and enhance README for extended version support ([df54fb3](https://github.com/eng618/asdf-hugo/commit/df54fb36307a8a49dd35822e03ebdbf27a07060b))
+* use macOS instead of darwin for Hugo release assets on macOS ([ec001a5](https://github.com/eng618/asdf-hugo/commit/ec001a54c650dd8e81af7c6e1e2932509d479943))
+
 ## [1.1.0](https://www.github.com/eng618/asdf-hugo/compare/v1.0.0...v1.1.0) (2026-01-11)
 
 
