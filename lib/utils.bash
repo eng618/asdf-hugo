@@ -29,7 +29,7 @@ list_github_tags() {
 }
 
 list_all_versions() {
-  list_github_tags
+  list_github_tags | awk '{print $0; print "extended_" $0}'
 }
 
 get_platform() {
@@ -86,7 +86,11 @@ download_release() {
     ;;
   esac
 
-  url="$GH_REPO/releases/download/v${version_path}/hugo_extended_${version}_${platform}-${arch}.tar.gz"
+  if [[ $version == extended_* ]]; then
+    url="$GH_REPO/releases/download/v${version_path}/hugo_extended_${version_path}_${platform}-${arch}.tar.gz"
+  else
+    url="$GH_REPO/releases/download/v${version_path}/hugo_${version}_${platform}-${arch}.tar.gz"
+  fi
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"

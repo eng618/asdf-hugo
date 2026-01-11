@@ -1,7 +1,6 @@
 <div align="center">
 
-# asdf-hugo [![Build](https://github.com/nklmilojevic/asdf-hugo/actions/workflows/build.yml/badge.svg)](https://github.com/nklmilojevic/asdf-hugo/actions/workflows/build.yml) [![Lint](https://github.com/nklmilojevic/asdf-hugo/actions/workflows/lint.yml/badge.svg)](https://github.com/nklmilojevic/asdf-hugo/actions/workflows/lint.yml)
-
+# asdf-hugo [![Build](https://github.com/eng618/asdf-hugo/actions/workflows/build.yml/badge.svg)](https://github.com/eng618/asdf-hugo/actions/workflows/build.yml) [![Lint](https://github.com/eng618/asdf-hugo/actions/workflows/lint.yml/badge.svg)](https://github.com/eng618/asdf-hugo/actions/workflows/lint.yml)
 
 [hugo](https://github.com/gohugoio/hugo) plugin for the [asdf version manager](https://asdf-vm.com).
 
@@ -9,9 +8,10 @@
 
 # Contents
 
+- [asdf-hugo](#asdf-hugo--)
+- [Contents](#contents)
 - [Dependencies](#dependencies)
 - [Install](#install)
-- [Why?](#why)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -25,13 +25,13 @@
 Plugin:
 
 ```shell
-asdf plugin add hugo https://github.com/nklmilojevic/asdf-hugo.git
+asdf plugin add hugo https://github.com/eng618/asdf-hugo.git
 ```
 
 hugo:
 
 ```shell
-# Show all installable versions
+# Show all installable versions (regular and extended)
 asdf list-all hugo
 
 # Install specific version
