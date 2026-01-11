@@ -16,11 +16,8 @@ jobs:
       - name: Install asdf dependencies
         uses: asdf-vm/actions/install@v4
 
-      - name: Run ShellCheck
-        run: scripts/shellcheck.bash
-
-      - name: Run shfmt
-        run: scripts/shfmt.bash
+      - name: Run linting and formatting check
+        run: ./scripts/lint.sh
 
   build:
     name: asdf plugin test

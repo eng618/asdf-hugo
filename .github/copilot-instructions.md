@@ -6,7 +6,7 @@ This is an [asdf](https://asdf-vm.com) plugin for installing [Hugo](https://gohu
 ## Architecture
 - **bin/**: Core asdf plugin scripts (`download`, `install`, `list-all`)
 - **lib/utils.bash**: Shared utilities and core logic
-- **scripts/**: Linting and formatting scripts (`shellcheck.bash`, `shfmt.bash`)
+- **scripts/**: Linting and formatting scripts (`lint.sh`, `shellcheck.bash`, `shfmt.bash`)
 
 All scripts source `lib/utils.bash` for common functions like `fail()`, `get_platform()`, `download_release()`.
 
@@ -19,7 +19,7 @@ All scripts source `lib/utils.bash` for common functions like `fail()`, `get_pla
 - **macOS Special Case**: Uses `.pkg` files for newer versions, extracts with `pkgutil` and `cpio`
 
 ## Development Workflow
-- **Lint**: Run `scripts/shellcheck.bash` and `scripts/shfmt.bash` for code quality
+- **Lint**: Run `./scripts/lint.sh` for code quality checks, or `./scripts/lint.sh --fix` to auto-fix formatting issues
 - **Test Locally**: `asdf plugin test hugo <repo-url> "hugo version"`
 - **CI**: Lints on push/PR, tests plugin installation on Ubuntu/macOS
 - **Release**: Automated via release-please on main branch pushes
