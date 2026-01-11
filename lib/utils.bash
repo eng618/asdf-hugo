@@ -29,7 +29,7 @@ list_github_tags() {
 }
 
 list_all_versions() {
-  list_github_tags | awk '{print "extended_" $0}'
+  list_github_tags | awk '{print $0 "+extended"}'
 }
 
 get_platform() {
@@ -69,9 +69,9 @@ download_release() {
   local version version_path filename url arch platform ext
   version="$1"
   if [ "$version" = "latest" ]; then
-    version="extended_$(list_github_tags | tail -1)"
+    version="$(list_github_tags | tail -1)+extended"
   fi
-  version_path="${version//extended_/}"
+  version_path="${version%+extended}"
   filename="$2"
   arch="$(get_arch)"
   platform="$(get_platform)"
@@ -93,7 +93,7 @@ download_release() {
     ;;
   esac
 
-  if [[ $version == extended_* ]]; then
+  if [[ $version == *+extended ]]; then
     url="$GH_REPO/releases/download/v${version_path}/hugo_extended_${version_path}_${platform}-${arch}${ext}"
   else
     url="$GH_REPO/releases/download/v${version_path}/hugo_${version_path}_${platform}-${arch}${ext}"
