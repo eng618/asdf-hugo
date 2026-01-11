@@ -68,6 +68,9 @@ get_arch() {
 download_release() {
   local version version_path filename url arch platform ext
   version="$1"
+  if [ "$version" = "latest" ]; then
+    version="$(list_all_versions | tail -1)"
+  fi
   version_path="${version//extended_/}"
   filename="$2"
   arch="$(get_arch)"
