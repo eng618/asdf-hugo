@@ -2,7 +2,7 @@
 
 # asdf-hugo [![Build](https://github.com/eng618/asdf-hugo/actions/workflows/build.yml/badge.svg)](https://github.com/eng618/asdf-hugo/actions/workflows/build.yml) [![Lint](https://github.com/eng618/asdf-hugo/actions/workflows/lint.yml/badge.svg)](https://github.com/eng618/asdf-hugo/actions/workflows/lint.yml)
 
-[hugo](https://github.com/gohugoio/hugo) plugin for the [asdf version manager](https://asdf-vm.com).
+[hugo](https://github.com/gohugoio/hugo) plugin for the [asdf version manager](https://asdf-vm.com), supporting both regular and extended versions.
 
 </div>
 
@@ -18,7 +18,6 @@
 # Dependencies
 
 - `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
 
 # Install
 
@@ -54,8 +53,8 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/nklmilojevic/asdf-hugo/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/eng618/asdf-hugo/graphs/contributors)!
 
 # License
 
-See [LICENSE](LICENSE) © [Nikola Milojević](https://github.com/nklmilojevic/)
+See [LICENSE](LICENSE) © [eng618](https://github.com/eng618/)
