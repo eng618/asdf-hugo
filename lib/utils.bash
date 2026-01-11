@@ -76,10 +76,6 @@ download_release() {
   macOS)
     version_minor="${version#*.}"
     version_minor="${version_minor%.*}"
-    if [ $version_minor -ge 103 ]; then
-      platform="darwin"
-    fi
-
     if [ $version_minor -ge 102 ]; then
       arch="universal"
     fi
