@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://www.github.com/eng618/asdf-hugo/compare/v1.1.0...v1.1.1) (2026-01-11)
+
+
+### Bug Fixes
+
+* update copyright information and enhance README for extended version support ([df54fb3](https://www.github.com/eng618/asdf-hugo/commit/df54fb36307a8a49dd35822e03ebdbf27a07060b))
+
 ## [1.1.0](https://www.github.com/eng618/asdf-hugo/compare/v1.0.0...v1.1.0) (2026-01-11)
 
 
