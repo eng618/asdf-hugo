@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/eng618/asdf-hugo/compare/v1.3.1...v1.3.2) (2026-01-11)
+
+
+### Bug Fixes
+
+* correct version formatting in list_all_versions and download_release functions ([9a2541b](https://github.com/eng618/asdf-hugo/commit/9a2541b978f64b2d52af2f8e45c052f0ade68b2e))
+
 ## [1.3.1](https://github.com/eng618/asdf-hugo/compare/v1.3.0...v1.3.1) (2026-01-11)
 
 
