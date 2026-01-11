@@ -27,7 +27,11 @@ if [ "$platform" = "darwin" ]; then
   # Extract .pkg
   pkgutil --expand "$release_file" "$ASDF_DOWNLOAD_PATH/pkg_expand"
   cd "$ASDF_DOWNLOAD_PATH/pkg_expand"
-  cpio -i <Payload
+  if gunzip <Payload | cpio -i 2>/dev/null; then
+    echo "Extracted Payload with gunzip"
+  else
+    cpio -i <Payload
+  fi
   find . -name hugo -type f -exec mv {} "$ASDF_DOWNLOAD_PATH/" \;
   cd -
   rm -rf "$ASDF_DOWNLOAD_PATH/pkg_expand"
