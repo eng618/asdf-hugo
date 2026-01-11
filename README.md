@@ -1,6 +1,6 @@
 <div align="center">
 
-# asdf-hugo [![Build](https://github.com/eng618/asdf-hugo/actions/workflows/build.yml/badge.svg)](https://github.com/eng618/asdf-hugo/actions/workflows/build.yml) [![Lint](https://github.com/eng618/asdf-hugo/actions/workflows/lint.yml/badge.svg)](https://github.com/eng618/asdf-hugo/actions/workflows/lint.yml)
+# asdf-hugo [![CI](https://github.com/eng618/asdf-hugo/actions/workflows/ci.yml/badge.svg)](https://github.com/eng618/asdf-hugo/actions/workflows/ci.yml)
 
 [hugo](https://github.com/gohugoio/hugo) plugin for the [asdf version manager](https://asdf-vm.com), supporting both regular and extended versions.
 
@@ -8,7 +8,7 @@
 
 # Contents
 
-- [asdf-hugo](#asdf-hugo--)
+- [asdf-hugo](#asdf-hugo-)
 - [Contents](#contents)
 - [Dependencies](#dependencies)
 - [Install](#install)
