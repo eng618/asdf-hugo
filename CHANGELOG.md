@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://www.github.com/eng618/asdf-hugo/compare/v1.1.0...v1.2.0) (2026-01-11)
+
+
+### Features
+
+* add FUNDING and dependabot configuration files ([2e31d37](https://www.github.com/eng618/asdf-hugo/commit/2e31d37edf173b19079f7dd9b95818ba24e0482a))
+
+
+### Bug Fixes
+
+* update copyright information and enhance README for extended version support ([df54fb3](https://www.github.com/eng618/asdf-hugo/commit/df54fb36307a8a49dd35822e03ebdbf27a07060b))
+
 ## [1.1.0](https://www.github.com/eng618/asdf-hugo/compare/v1.0.0...v1.1.0) (2026-01-11)
 
 
