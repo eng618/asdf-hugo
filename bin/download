@@ -28,7 +28,7 @@ if [ "$platform" = "darwin" ]; then
   pkgutil --expand "$release_file" "$ASDF_DOWNLOAD_PATH/pkg_expand"
   cd "$ASDF_DOWNLOAD_PATH/pkg_expand"
   cpio -i <Payload
-  mv hugo "$ASDF_DOWNLOAD_PATH/"
+  find . -name hugo -type f -exec mv {} "$ASDF_DOWNLOAD_PATH/" \;
   cd -
   rm -rf "$ASDF_DOWNLOAD_PATH/pkg_expand"
 else
