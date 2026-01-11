@@ -33,8 +33,11 @@ hugo:
 # Show all installable versions (regular and extended)
 asdf list-all hugo
 
-# Install specific version
+# Install latest extended version (recommended for Sass/SCSS support)
 asdf install hugo latest
+
+# Install specific version
+asdf install hugo X.Y.Z
 
 # Install specific extended version (for Sass/SCSS support)
 asdf install hugo extended_X.Y.Z
