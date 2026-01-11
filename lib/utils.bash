@@ -66,26 +66,34 @@ get_arch() {
 }
 
 download_release() {
-  local version version_path filename url arch platform
+  local version version_path filename url arch platform ext
   version="$1"
   version_path="${version//extended_/}"
   filename="$2"
   arch="$(get_arch)"
   platform="$(get_platform)"
+  ext=".tar.gz"
   case "${platform}" in
   macOS)
     version_minor="${version#*.}"
     version_minor="${version_minor%.*}"
+    if [ $version_minor -ge 103 ]; then
+      platform="darwin"
+    fi
+
     if [ $version_minor -ge 102 ]; then
       arch="universal"
+    fi
+    if [ "$platform" = "darwin" ]; then
+      ext=".pkg"
     fi
     ;;
   esac
 
   if [[ $version == extended_* ]]; then
-    url="$GH_REPO/releases/download/v${version_path}/hugo_extended_${version_path}_${platform}-${arch}.tar.gz"
+    url="$GH_REPO/releases/download/v${version_path}/hugo_extended_${version_path}_${platform}-${arch}${ext}"
   else
-    url="$GH_REPO/releases/download/v${version_path}/hugo_${version}_${platform}-${arch}.tar.gz"
+    url="$GH_REPO/releases/download/v${version_path}/hugo_${version_path}_${platform}-${arch}${ext}"
   fi
 
   echo "* Downloading $TOOL_NAME release $version..."
