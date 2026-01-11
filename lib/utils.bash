@@ -86,7 +86,7 @@ download_release() {
     ;;
   esac
 
-  url="$GH_REPO/releases/download/v${version_path}/hugo_${version}_${platform}-${arch}.tar.gz"
+  url="$GH_REPO/releases/download/v${version_path}/hugo_extended_${version}_${platform}-${arch}.tar.gz"
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
